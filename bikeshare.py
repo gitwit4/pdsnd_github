@@ -155,12 +155,12 @@ def user_stats(df):
 
     # TO DO: Display counts of user types
     user_types = df['User Type'].value_counts()
-    print("User Types:\n", user_types)
+    print("User Types:\n", str(user_types))
 
     # TO DO: Display counts of gender
     try:
         gender_types = df['Gender'].value_counts()
-        print("\nGender Types:\n", gender_types)
+        print("\nGender Types:\n", str(gender_types))
     except KeyError:
         print("\nGender Types:\nNo data available for this month.")
 
