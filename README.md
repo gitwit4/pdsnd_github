@@ -11,4 +11,4 @@ This project uses Python to look at US Bikeshare data from Chicago, New York, an
 bikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Udacity - Programming for Data Science with Python
