@@ -137,11 +137,11 @@ def trip_duration_stats(df):
 
     # TO DO: display total travel time
     Total_Travel_Time = sum(df['Trip Duration'])
-    print("Total Travel Time:", Total_Travel_Time/86400, "days.")
+    print("Total Travel Time:", round(Total_Travel_Time/86400, 2), "days.")
 
     # TO DO: display mean travel time
     Mean_Travel_Time = df['Trip Duration'].mean()
-    print("Mean Travel Time:", Mean_Travel_Time/60, "minutes.")
+    print("Mean Travel Time:", round(Mean_Travel_Time/60, 2), "minutes.")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -155,12 +155,12 @@ def user_stats(df):
 
     # TO DO: Display counts of user types
     user_types = df['User Type'].value_counts()
-    print("User Types:\n", user_types)
+    print("User Types:\n", str(user_types))
 
     # TO DO: Display counts of gender
     try:
         gender_types = df['Gender'].value_counts()
-        print("\nGender Types:\n", gender_types)
+        print("\nGender Types:\n", str(gender_types))
     except KeyError:
         print("\nGender Types:\nNo data available for this month.")
 
